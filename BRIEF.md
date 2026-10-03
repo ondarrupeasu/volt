@@ -11,7 +11,7 @@ UI probablemente **ES + euskara** (como la familia; el euskera técnico lo revis
 
 ## Publicar (propuesto)
 - Subdominio: **`volt.cinemafilmak.com`** (alternativas barajadas: `ohm.`, `electric.`). ⚠️ confirmar con Alex.
-- Host: **Infomaniak** (estático, como KeyLab/Puzzle/portal; creds `~/.cinemafilmak/`). `noindex`. PWA instalable.
+- Host: **GitHub Pages** (repo `ondarrupeasu/volt`, rama `main`, raíz; `CNAME`). DNS → `ondarrupeasu.github.io`. HTTPS forzado. `noindex`. PWA instalable.
 
 ## Estructura por niveles (borrador — pulir con Alex)
 - **N0 · Conceptos:** tensión(V)/intensidad(A)/resistencia(Ω)/potencia(W); analogía del agua; CC vs CA; fase/neutro/tierra.
@@ -52,5 +52,5 @@ localStorage (`volt.done`): un paso se marca hecho al acertar su pregunta.
 - **N1:** circuito abierto/cerrado · Ley de Ohm (fuente + carga, amperímetro, triángulo V-I-R, la bombilla se funde
   > 40 W) · serie vs paralelo (desenroscar bombillas).
 - Solo **ES** por ahora (euskera pendiente de Alex; no inventar). N2–N4 salen como «Próximamente».
-- Local: `python3 -m http.server 8790` (`.claude/launch.json`). Deploy: `./deploy.sh` (lftp, `.env.deploy` como Puzzle).
-**Siguiente:** N3 portando `breakers.tsx` (MCB/RCD) a strings SVG; N2 símbolos; i18n EU; confirmar subdominio.
+- Local: `python3 -m http.server 8790` (`.claude/launch.json`). Deploy: push a `main` → GitHub Pages. **En vivo:** https://volt.cinemafilmak.com
+**Siguiente:** N3 portando `breakers.tsx` (MCB/RCD) a strings SVG; N2 símbolos; i18n EU.
