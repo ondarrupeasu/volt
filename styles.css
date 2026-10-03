@@ -189,3 +189,29 @@ h3.sub { font-size: 14px; color: var(--ce-muted); text-transform: uppercase; let
 .bodyscale .mark { position: absolute; top: -4px; bottom: -4px; width: 4px; margin-left: -2px; background: #fff; border-radius: 2px;
   box-shadow: 0 0 10px #fff; transition: left .3s, opacity .3s; }
 @media (max-width: 720px) { .board, .rcd-board { grid-template-columns: 1fr; } }
+
+/* ---- N2 · símbolos ---- */
+.symgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; margin: 14px 0 8px; }
+.symcard { font: inherit; background: var(--ce-card); border: 1px solid var(--ce-line); border-radius: 12px; color: var(--ce-text);
+  padding: 12px 8px 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; font-size: 12.5px;
+  transition: border-color .16s, transform .12s; position: relative; }
+.symcard:hover { border-color: var(--ce-accent); transform: translateY(-2px); }
+.symcard.on { border-color: var(--ce-accent); background: var(--ce-accent-wash); }
+.symcard.seen::after { content: '✓'; position: absolute; top: 6px; right: 8px; color: var(--ce-ok); font-size: 12px; }
+.sym-svg { width: 56px; height: 56px; color: var(--ce-text); }
+.sym-svg.big { width: 160px; height: 160px; }
+.game { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: center; background: var(--ce-bg2);
+  border: 1px solid var(--ce-line); border-radius: var(--ce-r-lg); padding: 20px; margin: 14px 0; }
+.game-sym { display: grid; place-items: center; min-height: 180px; background: var(--ce-card); border-radius: 12px; }
+.game-sym .big { font-size: 48px; font-weight: 800; color: var(--ce-accent); }
+.game-score { color: var(--ce-muted); margin: 0 0 10px; }
+.game .next { margin-top: 12px; }
+@media (max-width: 600px) { .game { grid-template-columns: 1fr; } }
+.uni-svg { color: var(--ce-text); }
+.uni-svg .ln, .uni-svg .uni > path, .uni-svg .sl { stroke: currentColor; stroke-width: 2.4; fill: none; }
+.uni { cursor: pointer; }
+.uni .hit { fill: transparent; stroke: transparent; }
+.uni .hit.box { stroke: var(--ce-muted2); fill: var(--ce-card); }
+.uni:hover .hit { stroke: var(--ce-line); }
+.uni.sel { color: var(--ce-accent); }
+.uni.sel .hit { stroke: var(--ce-accent); fill: var(--ce-accent-wash); }

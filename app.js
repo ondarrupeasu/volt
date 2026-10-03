@@ -2,12 +2,13 @@
 import { h } from './ui.js';
 import n0 from './levels/n0.js';
 import n1 from './levels/n1.js';
+import n2 from './levels/n2.js';
 import n3 from './levels/n3.js';
 
 const LEVELS = [
   n0,
   n1,
-  { id: 'n2', num: 2, title: 'Símbolos y esquemas', blurb: 'Los iconos de los planos eléctricos y cómo leer un unifilar.', soon: true },
+  n2,
   n3,
   { id: 'n4', num: 4, title: 'Trifásica e instalación real', blurb: 'Tres fases, reparto de cargas… y el cuadro real del control.', soon: true },
 ];

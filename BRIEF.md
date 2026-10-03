@@ -56,4 +56,6 @@ localStorage (`volt.done`): un paso se marca hecho al acertar su pregunta.
   TEST, escala de efectos en el cuerpo). SVG portados a `levels/breakers.js`.
 - Solo **ES** por ahora (euskera pendiente de Alex; no inventar). N2–N4 salen como «Próximamente».
 - Local: `python3 -m http.server 8790` (`.claude/launch.json`). Deploy: push a `main` → GitHub Pages. **En vivo:** https://volt.cinemafilmak.com
-**Siguiente:** N2 símbolos; N4 trifásica + cuadro real; i18n EU.
+- **N2:** galería de 13 símbolos IEC 60617 · juego de emparejar (10 rondas, distractores parecidos) · unifilar
+  de vivienda (contador → IGA → diferencial → C1/C2/C3) clicable.
+**Siguiente:** N4 trifásica + cuadro real; i18n EU.
