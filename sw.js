@@ -1,9 +1,9 @@
 /* Volt service worker — network-first + caché para offline.
    Sube CACHE cuando cambien los assets. */
-const CACHE = 'volt-v1';
+const CACHE = 'volt-v2';
 const ASSETS = [
-  './', './index.html', './casa-estilo.css?v=1', './styles.css?v=1', './app.js?v=1',
-  './levels/n0.js', './levels/n1.js', './ui.js', './manifest.webmanifest', './icon.svg',
+  './', './index.html', './casa-estilo.css?v=1', './styles.css?v=2', './app.js?v=2',
+  './levels/n0.js', './levels/n1.js', './levels/n3.js', './levels/breakers.js', './ui.js', './manifest.webmanifest', './icon.svg',
 ];
 
 self.addEventListener('install', (e) => {

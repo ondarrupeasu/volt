@@ -2,12 +2,13 @@
 import { h } from './ui.js';
 import n0 from './levels/n0.js';
 import n1 from './levels/n1.js';
+import n3 from './levels/n3.js';
 
 const LEVELS = [
   n0,
   n1,
   { id: 'n2', num: 2, title: 'Símbolos y esquemas', blurb: 'Los iconos de los planos eléctricos y cómo leer un unifilar.', soon: true },
-  { id: 'n3', num: 3, title: 'Protecciones', blurb: 'Magnetotérmico, diferencial y fusible: qué cortan y por qué te salvan.', soon: true },
+  n3,
   { id: 'n4', num: 4, title: 'Trifásica e instalación real', blurb: 'Tres fases, reparto de cargas… y el cuadro real del control.', soon: true },
 ];
 
@@ -70,11 +71,11 @@ function level(lv, stepId) {
   step.render(body, { done: () => markDone(lv.id, step.id) });
 
   const prev = lv.steps[idx - 1], next = lv.steps[idx + 1];
-  const nextLv = LEVELS[LEVELS.indexOf(lv) + 1];
+  const nextLv = LEVELS.slice(LEVELS.indexOf(lv) + 1).find((l) => !l.soon);
   const foot = h('<footer class="step-foot"></footer>');
   foot.append(prev ? h(`<a class="ce-btn" href="#/${lv.id}/${prev.id}">← ${prev.title}</a>`) : h('<span></span>'));
   if (next) foot.append(h(`<a class="ce-btn ce-primary" href="#/${lv.id}/${next.id}">${next.title} →</a>`));
-  else if (nextLv && !nextLv.soon) foot.append(h(`<a class="ce-btn ce-primary" href="#/${nextLv.id}">Nivel ${nextLv.num} →</a>`));
+  else if (nextLv) foot.append(h(`<a class="ce-btn ce-primary" href="#/${nextLv.id}">Nivel ${nextLv.num} →</a>`));
   else foot.append(h('<a class="ce-btn ce-primary" href="#/">Volver a los niveles</a>'));
 
   app.replaceChildren(nav, body, foot);

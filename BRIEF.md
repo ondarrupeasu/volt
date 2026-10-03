@@ -51,6 +51,9 @@ localStorage (`volt.done`): un paso se marca hecho al acertar su pregunta.
   · fase/neutro/tierra con mini-juego tocando cables.
 - **N1:** circuito abierto/cerrado · Ley de Ohm (fuente + carga, amperímetro, triángulo V-I-R, la bombilla se funde
   > 40 W) · serie vs paralelo (desenroscar bombillas).
+- **N3:** regleta con aparatos (sin protección → el cable arde; fusible 10 A; magnetotérmico C10 con disparo
+  térmico lento + magnético por cortocircuito) · diferencial 30 mA (fase→carcasa, con/sin tierra, persona toca,
+  TEST, escala de efectos en el cuerpo). SVG portados a `levels/breakers.js`.
 - Solo **ES** por ahora (euskera pendiente de Alex; no inventar). N2–N4 salen como «Próximamente».
 - Local: `python3 -m http.server 8790` (`.claude/launch.json`). Deploy: push a `main` → GitHub Pages. **En vivo:** https://volt.cinemafilmak.com
-**Siguiente:** N3 portando `breakers.tsx` (MCB/RCD) a strings SVG; N2 símbolos; i18n EU.
+**Siguiente:** N2 símbolos; N4 trifásica + cuadro real; i18n EU.

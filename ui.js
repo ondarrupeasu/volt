@@ -88,6 +88,18 @@ export function setBulb(g, glow, broken = false) {
     : 'M-7 18 V4 L-4 -6 L-1 2 L2 -6 L5 2 L7 -4 V18');
 }
 
+/** Interruptor deslizante de la Casa (.ce-sw). */
+export function toggle({ label, value = false, onChange }) {
+  const el = h(`<label class="ce-sw"><span class="ce-track"><span class="ce-knob"></span></span><span>${label}</span></label>`);
+  const tr = el.querySelector('.ce-track');
+  let v = value;
+  const paint = () => tr.classList.toggle('ce-on', v);
+  el.onclick = (e) => { e.preventDefault(); v = !v; paint(); onChange?.(v); };
+  el.set = (x) => { v = x; paint(); };
+  paint();
+  return el;
+}
+
 /** Formatea con coma decimal (es/eu). */
 export const num = (v, d = 2) =>
   Number(v).toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: d });
