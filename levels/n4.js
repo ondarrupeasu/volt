@@ -184,7 +184,10 @@ function cuadro(el, { done }) {
       tres fases y el neutro a la vez.</li>
     <li><b>DATAPAK (Hager 4P)</b> y <b>Dimmers (Legrand 4P)</b>: alimentación trifásica de cada Datapak.</li>
     <li><b>LED (CHINT 1P+N 16 A)</b>: una sola fase para los focos LED, que se regulan por DMX y no necesitan dimmer.</li>
-    <li><b>24 × K60N 2P 10 A</b>: circuitos de fase + neutro, cada uno con su magnetotérmico.</li></ul>
+    <li><b>24 × K60N 2P 10 A</b>: circuitos de fase + neutro, cada uno con su magnetotérmico. Hipótesis (sin comprobar
+      en la pared): son las salidas de los dos Datapak, 2 × 12 canales de 10 A.</li></ul>
+    <p class="small muted">El reparto de este cuadro es una <b>hipótesis de trabajo</b> que aún hay que verificar bajando cada
+      breaker y mirando qué pilotos ψ se apagan.</p>
     Puedes ver este mismo cuadro conectado a la mesa de luces en <a href="https://tvstudio.cinemafilmak.com" target="_blank" rel="noopener">tvstudio</a>.</div>`));
 
   el.append(quiz({

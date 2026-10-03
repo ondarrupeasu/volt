@@ -73,7 +73,7 @@ function board(){const W=RAILW+2*BX,H=900;let s=`<svg class="pw-board" viewBox="
   for(let r=0;r<ROWS;r++){const y=316+r*178;
     s+=`<rect x="${BX}" y="${y+PH/2-8}" width="${RAILW}" height="16" fill="#6b6d72"/>`;
     for(let i=0;i<PER;i++){const m=mcb(2,{...MG,rating:'C10'}),n=r*PER+i+1;
-      s+=modG(`c${r}_${i}`,BX+i*2*PW,y,m.svg,m.w,`Circuito ${n} · Merlin Gerin K60N 2P C10`,'Uno de los 24 magnetotérmicos de 10 A (fase + neutro) del control.');}}
+      s+=modG(`c${r}_${i}`,BX+i*2*PW,y,m.svg,m.w,`Circuito ${n} · Merlin Gerin K60N 2P C10`,'Uno de los 24 magnetotérmicos de 10 A (fase + neutro). Hipótesis sin comprobar: protegen las salidas de los dos Datapak (2 × 12 canales de 10 A).');}}
   // terminal strip
   for(let i=0;i<60;i++)s+=`<rect x="${70+i*11}" y="730" width="9" height="30" rx="1" fill="#b39b62" stroke="#6e5c33" stroke-width=".6"/>`;
   s+=`<rect x="150" y="830" width="420" height="12" rx="2" fill="#9c8a55"/><path d="M560 800 C 600 780, 640 840, 700 820" fill="none" stroke="#d6c42a" stroke-width="3"/>`;
