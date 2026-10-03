@@ -4,13 +4,14 @@ import n0 from './levels/n0.js';
 import n1 from './levels/n1.js';
 import n2 from './levels/n2.js';
 import n3 from './levels/n3.js';
+import n4 from './levels/n4.js';
 
 const LEVELS = [
   n0,
   n1,
   n2,
   n3,
-  { id: 'n4', num: 4, title: 'Trifásica e instalación real', blurb: 'Tres fases, reparto de cargas… y el cuadro real del control.', soon: true },
+  n4,
 ];
 
 /* ---- progreso ---- */

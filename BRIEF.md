@@ -58,4 +58,17 @@ localStorage (`volt.done`): un paso se marca hecho al acertar su pregunta.
 - Local: `python3 -m http.server 8790` (`.claude/launch.json`). Deploy: push a `main` → GitHub Pages. **En vivo:** https://volt.cinemafilmak.com
 - **N2:** galería de 13 símbolos IEC 60617 · juego de emparejar (10 rondas, distractores parecidos) · unifilar
   de vivienda (contador → IGA → diferencial → C1/C2/C3) clicable.
-**Siguiente:** N4 trifásica + cuadro real; i18n EU.
+- **N4:** tres fases (ondas + fasores, L1−L2 = 400 V, suma = 0) · reparto de 12 focos entre L1/L2/L3 (límite 40 A,
+  corriente de neutro) · **cuadro real** del control con misión (diferencial → LED → Dimmers → ELECTRONICS Datapak 2).
+  `levels/cuadro.js` = COPIA del dibujo de `tvstudio/power.js` (solo textos en ES): si cambia allí, sincronizar.
+**Siguiente:** N5 «Electricidad en el estudio» (ver frontera AVHandbook abajo); i18n EU.
+
+## Frontera con AVHandbook (acordada con su sesión, 4-oct-2026)
+**Volt = el «por qué» eléctrico** (voltios, ohmios, Z, CC). **AVHandbook = uso AV práctico + monitorado + efecto en cámara.**
+Plan **N5 «Electricidad en el estudio»** (todo de Volt): impedancia (mic→previo bridging, 8 Ω/paralelo, 75 Ω SDI,
+120 Ω DMX, reflexiones) · niveles como tensión (dBu=0,775 V, +4 dBu=1,23 V, −10 dBV) · phantom 48 V · bucles de
+masa/zumbido 50 Hz · vídeo analógico como tensión (1 Vpp, 700 mV, sync −300 mV, IRE) · flicker (100 parpadeos/s, dimmers).
+Enlaces a AVHandbook (SPA sin deep-links aún → home https://avhandbook.cinemafilmak.com + nombre de módulo):
+Audio › Balanced Audio, Levels & Metering (dBFS), Loudness EBU R128, Production Sound · Artifacts & Defects › Flicker &
+Rolling Bands · Signals & Connectivity · Monitoring & Scopes › False Color, Scopes · Color Science (SDR/HDR = suyo, sin módulo aún).
+Si AVHandbook añade rutas hash `#/<módulo>`, nos pasa las URLs.
