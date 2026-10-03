@@ -5,6 +5,7 @@ import n1 from './levels/n1.js';
 import n2 from './levels/n2.js';
 import n3 from './levels/n3.js';
 import n4 from './levels/n4.js';
+import n5 from './levels/n5.js';
 
 const LEVELS = [
   n0,
@@ -12,6 +13,7 @@ const LEVELS = [
   n2,
   n3,
   n4,
+  n5,
 ];
 
 /* ---- progreso ---- */

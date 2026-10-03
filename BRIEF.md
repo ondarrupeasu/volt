@@ -61,14 +61,18 @@ localStorage (`volt.done`): un paso se marca hecho al acertar su pregunta.
 - **N4:** tres fases (ondas + fasores, L1−L2 = 400 V, suma = 0) · reparto de 12 focos entre L1/L2/L3 (límite 40 A,
   corriente de neutro) · **cuadro real** del control con misión (diferencial → LED → Dimmers → ELECTRONICS Datapak 2).
   `levels/cuadro.js` = COPIA del dibujo de `tvstudio/power.js` (solo textos en ES): si cambia allí, sincronizar.
-**Siguiente:** N5 «Electricidad en el estudio» (ver frontera AVHandbook abajo); i18n EU.
+- **N5 Electricidad en el estudio (8 pasos):** impedancia/bridging (micro, guitarra→Hi-Z/DI) · altavoces 8 Ω serie/paralelo
+  vs ampli mín. 4 Ω · reflexiones en líneas 75/120 Ω (Γ) · niveles dBu/dBV↔V · phantom 48 V (pin 2/3, modo común) ·
+  zumbido/bucle de masa (Web Audio 50 Hz + armónicos; ground lift vs quitar tierra = peligro) · vídeo como tensión
+  (−300/0/700 mV, sin terminar = ×2, IRE) · flicker (100 Hz, fps×obturación, LED/incand./flicker-free). Enlaces deep-link a AVHandbook.
+**Siguiente:** revisión de Alex (textos/técnica) · i18n EU.
 
 ## Frontera con AVHandbook (acordada con su sesión, 4-oct-2026)
 **Volt = el «por qué» eléctrico** (voltios, ohmios, Z, CC). **AVHandbook = uso AV práctico + monitorado + efecto en cámara.**
 Plan **N5 «Electricidad en el estudio»** (todo de Volt): impedancia (mic→previo bridging, 8 Ω/paralelo, 75 Ω SDI,
 120 Ω DMX, reflexiones) · niveles como tensión (dBu=0,775 V, +4 dBu=1,23 V, −10 dBV) · phantom 48 V · bucles de
 masa/zumbido 50 Hz · vídeo analógico como tensión (1 Vpp, 700 mV, sync −300 mV, IRE) · flicker (100 parpadeos/s, dimmers).
-Enlaces a AVHandbook (SPA sin deep-links aún → home https://avhandbook.cinemafilmak.com + nombre de módulo):
+Enlaces a AVHandbook con deep-link `https://avhandbook.cinemafilmak.com/#/<slug>` (slug = id camelCase→kebab):
 Audio › Balanced Audio, Levels & Metering (dBFS), Loudness EBU R128, Production Sound · Artifacts & Defects › Flicker &
 Rolling Bands · Signals & Connectivity · Monitoring & Scopes › False Color, Scopes · Color Science (SDR/HDR = suyo, sin módulo aún).
-Si AVHandbook añade rutas hash `#/<módulo>`, nos pasa las URLs.
+Slugs: balanced-audio, levels, loudness, prod-sound, mic-types, polar-patterns, sync-timecode, flicker, signals, false-color, scopes, color-spaces, picture-profiles, aces.
