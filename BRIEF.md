@@ -74,5 +74,5 @@ Plan **N5 «Electricidad en el estudio»** (todo de Volt): impedancia (mic→pre
 masa/zumbido 50 Hz · vídeo analógico como tensión (1 Vpp, 700 mV, sync −300 mV, IRE) · flicker (100 parpadeos/s, dimmers).
 Enlaces a AVHandbook con deep-link `https://avhandbook.cinemafilmak.com/#/<slug>` (slug = id camelCase→kebab):
 Audio › Balanced Audio, Levels & Metering (dBFS), Loudness EBU R128, Production Sound · Artifacts & Defects › Flicker &
-Rolling Bands · Signals & Connectivity · Monitoring & Scopes › False Color, Scopes · Color Science (SDR/HDR = suyo, sin módulo aún).
-Slugs: balanced-audio, levels, loudness, prod-sound, mic-types, polar-patterns, sync-timecode, flicker, signals, false-color, scopes, color-spaces, picture-profiles, aces.
+Rolling Bands · Signals & Connectivity · Monitoring & Scopes › False Color, Scopes · Color Science (SDR/HDR = suyo: #/hdr).
+Slugs: hdr (SDR vs HDR, nuevo), balanced-audio, levels, loudness, prod-sound, mic-types, polar-patterns, sync-timecode, flicker, signals, false-color, scopes, color-spaces, picture-profiles, aces.

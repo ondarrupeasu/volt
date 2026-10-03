@@ -361,6 +361,7 @@ function video(el, { done }) {
     <small class="muted">Para completar el paso: activa el «sin terminar», mira qué pasa, quítalo y deja el blanco en 700 mV.</small></div>`));
   el.append(h(avh('scopes', 'Monitoring & Scopes', 'Scopes', 'cómo se LEE ese nivel en el monitor de forma de onda (IRE / %)')));
   el.append(h(avh('false-color', 'Monitoring & Scopes', 'False Color', 'el mismo nivel convertido en colores para exponer en rodaje')));
+  el.append(h(avh('hdr', 'Color Science', 'SDR vs HDR', 'qué pasa cuando el «100 %» ya no es el techo: nits, curvas PQ y HLG')));
 }
 
 /* ---------- 8 · Parpadeo (flicker) ---------- */
